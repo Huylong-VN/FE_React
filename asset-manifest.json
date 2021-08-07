@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/FE-React/static/css/main.f31a0a0e.chunk.css",
+    "main.js": "/FE-React/static/js/main.541773e2.chunk.js",
+    "main.js.map": "/FE-React/static/js/main.541773e2.chunk.js.map",
+    "runtime-main.js": "/FE-React/static/js/runtime-main.a3f85e26.js",
+    "runtime-main.js.map": "/FE-React/static/js/runtime-main.a3f85e26.js.map",
+    "static/css/2.3f6a2ac7.chunk.css": "/FE-React/static/css/2.3f6a2ac7.chunk.css",
+    "static/js/2.0098bc2f.chunk.js": "/FE-React/static/js/2.0098bc2f.chunk.js",
+    "static/js/2.0098bc2f.chunk.js.map": "/FE-React/static/js/2.0098bc2f.chunk.js.map",
+    "static/js/3.3213f8f3.chunk.js": "/FE-React/static/js/3.3213f8f3.chunk.js",
+    "static/js/3.3213f8f3.chunk.js.map": "/FE-React/static/js/3.3213f8f3.chunk.js.map",
+    "index.html": "/FE-React/index.html",
+    "static/css/2.3f6a2ac7.chunk.css.map": "/FE-React/static/css/2.3f6a2ac7.chunk.css.map",
+    "static/css/main.f31a0a0e.chunk.css.map": "/FE-React/static/css/main.f31a0a0e.chunk.css.map",
+    "static/js/2.0098bc2f.chunk.js.LICENSE.txt": "/FE-React/static/js/2.0098bc2f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a3f85e26.js",
+    "static/css/2.3f6a2ac7.chunk.css",
+    "static/js/2.0098bc2f.chunk.js",
+    "static/css/main.f31a0a0e.chunk.css",
+    "static/js/main.541773e2.chunk.js"
+  ]
+}
