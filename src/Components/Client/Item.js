@@ -12,7 +12,7 @@ const Item = (props) => {
      {products.map((product) => (
       <Col key={product.id} span={6} xs={12} sm={8} xxl={6}>
         <Card size="small" extra={<Link href="#">More</Link>} hoverable title={product.name}>
-          <Image alt={product.name} className="product_image" src={"https://localhost:5001/user-content/"+product.image} />
+          <Image alt={product.name} className="product_image" src={"http://huylong37-001-site1.btempurl.com//user-content/"+product.image} />
           <Card.Meta description={product.description} />
         </Card>
       </Col>

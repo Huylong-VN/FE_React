@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Button, Table, Input, InputNumber, Form,notification } from "antd";
-import {RoleAssign} from "./RoleAssign"
+import { Button, Table, Input, InputNumber, Form, notification } from "antd";
+import { RoleAssign } from "./RoleAssign";
 
 import userApi from "../../../api/userApi";
 const EditableCell = ({
@@ -35,7 +35,7 @@ const EditableCell = ({
   );
 };
 
-const EditableTable = ({ Data,role,roleuser }) => {
+const EditableTable = ({ Data }) => {
   const [form] = Form.useForm();
   const [editingid, setEditingid] = useState("");
 
@@ -154,10 +154,20 @@ const EditableTable = ({ Data,role,roleuser }) => {
       },
     },
     {
-      title: "RoleAssign",
+      title: "Delete",
       render: (_, record) => (
-         <RoleAssign roleuser={roleuser} id={record.id} role={role}/>
+        <Button
+          onClick={() => {
+            userApi.delete({"userId":localStorage.getItem("Id"), "id":record.id});
+          }}
+        >
+          Delete
+        </Button>
       )
+      },
+    {
+      title: "RoleAssign",
+      render: (_, record) => <RoleAssign id={record.id} />,
     },
   ];
 

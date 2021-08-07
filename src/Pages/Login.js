@@ -64,9 +64,9 @@ export default function SignIn() {
         console.log(response);
         localStorage.setItem("token", response.token);
         localStorage.setItem("Id", response.id);
-        localStorage.setItem("role", response.role);
+        localStorage.setItem("role", response.roles);
         toast.success("Đăng nhập thành công")
-        if(response.role.length>0){
+        if(response.roles.length>0){
           return history.replace("/admin")
         }
         return history.replace("/home");

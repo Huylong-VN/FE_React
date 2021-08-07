@@ -4,7 +4,6 @@ import { Pagination } from "antd";
 import Create from "../Components/Admin/User/Create";
 import Search from "../Components/Search";
 import UD from "../Components/Admin/User/UD";
-import roleApi from "../api/roleApi"
 const Manage_users = () => {
   //state
   var [pagination, setpagination] = useState({
@@ -23,14 +22,11 @@ const Manage_users = () => {
     });
   };
   const [data, setData] = useState([]);
-  const [role,setrole] = useState();
   useEffect(() => {
     let mounted = true;
     const featchApi = async () => {
       if (mounted === true) {
         const response = await userApi.getAll(filters);
-        const role=await roleApi.getAll();
-        setrole(role);
         setData(response.items);
         setpagination({
           pageIndex: response.pageIndex,
@@ -53,7 +49,7 @@ const Manage_users = () => {
     <>
       <Create />
       <Search onSubmit={handleFiltersChange} />
-      <UD role={role} Data={data} />
+      <UD Data={data} />
       <Pagination
         current={pagination.pageIndex}
         defaultPageSize={6}

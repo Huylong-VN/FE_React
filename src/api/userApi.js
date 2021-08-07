@@ -32,8 +32,14 @@ const productApi=({
         }})
     },
     getRole:async(params)=>{
-        const url="users/"+params;
+        const url="users/getrole/"+params;
         return await axiosClient.get(url,{params,headers:{
+            Authorization:"Bearer "+localStorage.getItem("token")
+        }})
+    },
+    delete:async(params)=>{
+        const url="users/";
+        return await axiosClient.delete(url,{params,headers:{
             Authorization:"Bearer "+localStorage.getItem("token")
         }})
     }

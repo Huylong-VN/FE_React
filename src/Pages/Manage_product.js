@@ -90,7 +90,7 @@ const Manage_product = () => {
                         alt={product.name}
                         style={{ height: 100, width: 100 }}
                         src={
-                          "https://localhost:5001/user-content/" + product.image
+                          "http://huylong37-001-site1.btempurl.com/user-content/" + product.image
                         }
                       />
                     </td>
